@@ -1,0 +1,28 @@
+//question 2
+
+
+#[derive(Debug)]
+
+//creating a type TrafficLight
+struct TrafficLight {
+    color: String,
+}
+
+
+// implementation of the TrafficLight type to a public function
+impl TrafficLight {
+//$self here is a reference to the current object TrafficLight 
+    pub fn show_state(&self) {
+        println!("the current state is {}", self.color);
+    }
+}
+
+fn main() {
+// instatiating a new variable to our type TrafficLight with it's perimeter
+    let light = TrafficLight {
+        color: "red".to_owned(),
+    };
+    //calling our function 
+    light.show_state();
+    println!("{:?}", light);
+}
