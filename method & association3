@@ -1,0 +1,19 @@
+//creating our own type and hold data type of our choice
+struct TrafficLight {
+    color: String,
+}
+
+impl TrafficLight {
+    // creating a new public function and referencing it to our type trafficlight
+    pub fn show_state(&self)  {
+        println!("the current state is {}", self.color);
+    }
+
+    // creating a public function which can be mutated
+    pub fn change_state(& mut self) {
+        self.color = "green".to_string()
+    }
+}
+fn main() {
+    println!("Success!");
+}
