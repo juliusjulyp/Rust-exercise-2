@@ -1,0 +1,11 @@
+struct Point<T, V> {
+    x: T,
+    // creating another generic type since we will be having two different data type
+    y: V,
+}
+
+fn main() {
+    let p = Point{x: 5, y : 6};
+
+    println!("Success!");
+}
