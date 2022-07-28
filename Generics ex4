@@ -1,0 +1,19 @@
+// here Val is generic over type U
+struct Val<U> {
+//concrete data type
+    val: U,
+}
+
+// U here had to be declared again as a generic data type so as it can be used by Val<U>
+impl<U> Val<U> {
+    fn value(&self) -> &U {
+        &self.val
+    }
+}
+
+
+fn main() {
+    let x = Val{ val: 3.0 };
+    let y = Val{ val: "hello".to_string()};
+    println!("{}, {}", x.value(), y.value());
+}
