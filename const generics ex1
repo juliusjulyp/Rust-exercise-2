@@ -1,0 +1,20 @@
+// T is generic type with array size N
+struct Array<T, const N: usize> {
+    data : [T; N]
+}
+
+fn main() {
+    let arrays = [
+        Array{
+        // array should have 3 parameters
+            data: [1, 2, 3],
+        },
+        Array {
+            data: [5, 2, 5],
+        },
+        Array {
+            data: [2, 2, 6]
+        }
+    ];
+    println!( "success")
+}
