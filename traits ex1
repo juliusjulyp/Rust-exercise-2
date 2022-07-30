@@ -1,5 +1,6 @@
 trait Hello {
 //declaring method signatures
+//method decleration to show the behaviour of the types that are implemented to our trait Hello
     fn say_hi(&self) -> String {
         String::from("hi")
     }
@@ -7,6 +8,7 @@ trait Hello {
     fn say_something(&self) -> String;
 }
 
+//we can implement trait on different types as the code below shows ie Teacher and Student
 struct Student {}
 //after impl we put the name of the trait to be implemented then use for, followed by the name of the type we want to implement
 impl Hello for Student {
