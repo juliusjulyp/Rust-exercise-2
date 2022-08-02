@@ -1,0 +1,13 @@
+#[derive(Debug)]
+// a type person with two variables name and age
+struct Person {
+    name: String,
+    age: u8
+}
+
+fn main() {
+assigning new variable person to our type Person and calling its variables
+    let person = Person { name:  "Sunface".to_string(), age: 18 };
+
+    println!("{:#?}", person);
+}
