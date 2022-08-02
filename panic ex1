@@ -1,0 +1,17 @@
+use core::panic;
+//fuction with a parameter beverage which is a string
+fn drink(beverage: &str) {
+    if beverage == "lemonade" {
+        println!("Success!");
+        // if there's a panic
+        panic!("drinked, duang.....peng!")
+     }
+
+    println!("Exercise Failed if printing out this line!");
+}
+
+fn main() {
+    drink("lemonade");
+
+    println!("Exercise Failed if printing out this line!");
+}
