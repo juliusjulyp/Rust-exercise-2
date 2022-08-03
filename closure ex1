@@ -1,0 +1,11 @@
+fn main() {
+//variable color, assignong value to be a string green 
+    let color = String::from("green");
+
+    let print = || println!("`color`: {}", color);
+
+    print();
+    print();
+
+    println!("{}",color);
+}
